@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="pokedex">
+        
+        <header class="header">
+            <h1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt="pokebola" style="width: 50px; vertical-align: middle; margin-right: 10px;">POKÉDEX <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt="pokebola" style="width: 50px; vertical-align: middle; margin-right: 10px;"></h1>
+            <p>Pokémon Iniciais das 9 Gerações</p>
+        </header>
+
+        
+        <div class="search-container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Pesquise pelo nome do Pokémon...">
+                <button id="clearSearch"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+
+       
+        <div id="loading" class="loading hidden">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Carregando Pokémon...</p>
+        </div>
+
+        
+        <div id="pokemonGrid" class="pokemon-grid"></div>
+
+       
+        <div id="noResults" class="no-results hidden">
+            <i class="fas fa-search"></i>
+            <h3>Nenhum Pokémon encontrado</h3>
+            <p>Tente pesquisar por outro nome</p>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
